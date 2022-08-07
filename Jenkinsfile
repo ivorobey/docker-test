@@ -36,6 +36,13 @@ spec:
       env:
         - name: DOCKER_TLS_CERTDIR
           value: /certs
+      resources:
+        requests:
+          cpu: "256m"
+          memory: "256Mi"
+        limits:
+          cpu: "256m"
+          memory: "256Mi"
       volumeMounts:
         - name: dind-storage
           mountPath: /var/lib/docker
