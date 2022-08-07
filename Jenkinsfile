@@ -39,10 +39,10 @@ spec:
       resources:
         requests:
           cpu: "256m"
-          memory: "256Mi"
+          memory: "512Mi"
         limits:
           cpu: "256m"
-          memory: "256Mi"
+          memory: "512Mi"
       volumeMounts:
         - name: dind-storage
           mountPath: /var/lib/docker
