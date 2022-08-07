@@ -54,7 +54,7 @@ spec:
       steps {
         sh 'printenv'
         sh 'docker build -t local/hello-world .'
-        sh 'docker images'
+        sh 'docker run local/hello-world'
       }
     }
   }
