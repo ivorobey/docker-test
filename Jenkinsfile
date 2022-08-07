@@ -53,7 +53,7 @@ spec:
     stage('Run Docker Things') {
       steps {
         sh 'printenv'
-        sh 'docker info'
+        sh 'ls'
       }
     }
   }
