@@ -52,7 +52,6 @@ spec:
   stages {
     stage('Run Docker Things') {
       steps {
-        sh 'printenv'
         sh 'docker build -t local/hello-world .'
         sh 'docker run local/hello-world'
       }
