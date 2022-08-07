@@ -5,7 +5,6 @@ pipeline {
         stage('Hello') {
             steps {
                 ls -la
-                
             }
         }
     }
