@@ -21,10 +21,6 @@ spec:
         - name: dind-certs
           mountPath: /certs
       env:
-        - name: DOCKER_TLS_CERTDIR
-          value: /certs
-        - name: DOCKER_CERT_PATH
-          value: /certs
         - name: DOCKER_TLS_VERIFY
           value: 0
         - name: DOCKER_HOST
