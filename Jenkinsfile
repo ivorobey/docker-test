@@ -4,10 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh '''
-                #!bin/sh
-                ls -la
-                '''
+                sh 'docker build -t helloworld .'
             }
         }
     }
