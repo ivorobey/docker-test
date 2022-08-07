@@ -53,7 +53,8 @@ spec:
     stage('Run Docker Things') {
       steps {
         sh 'printenv'
-        sh 'ls'
+        sh 'docker build -t local/helloWorld .'
+        sh 'docker images'
       }
     }
   }
