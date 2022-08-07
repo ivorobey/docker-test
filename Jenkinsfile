@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                ```ls -la```
+                sh '''
+                #!bin/sh
+                ls -la
+                '''
             }
         }
     }
