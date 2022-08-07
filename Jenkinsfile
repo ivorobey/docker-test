@@ -24,7 +24,9 @@ spec:
         - name: DOCKER_TLS_CERTDIR
           value: /certs
         - name: DOCKER_CERT_PATH
-          value: /certs
+          value: ""
+        - name: DOCKER_CERT_DIR
+          value: ""
         - name: DOCKER_TLS_VERIFY
           value: 1
         - name: DOCKER_HOST
@@ -35,7 +37,7 @@ spec:
         privileged: true
       env:
         - name: DOCKER_TLS_CERTDIR
-          value: /certs
+          value: /certs/client
       resources:
         requests:
           cpu: "256m"
